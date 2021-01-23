@@ -1,18 +1,6 @@
 @import "../../node_modules/reset-css/sass/reset";
-@import "utils";
-@import "fonts";
-@import "typography";
-@import "header.scss";
-@import "main.scss";
-@import "exhibition.scss";
-@import "info-block.scss";
-@import "decoration.scss";
-@import "events.scss";
-@import "section-button.scss";
-@import "visit.scss";
-@import "news.scss";
-@import "subscribe.scss";
-@import "footer.scss";
+@import "utils/utils";
+@import "modules/modules";
 
 body {
   font-size: 16px;
