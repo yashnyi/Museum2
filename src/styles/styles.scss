@@ -1,0 +1,41 @@
+@import "../../node_modules/reset-css/sass/reset";
+@import "utils";
+@import "fonts";
+@import "typography";
+@import "header.scss";
+@import "main.scss";
+@import "exhibition.scss";
+@import "info-block.scss";
+@import "decoration.scss";
+@import "events.scss";
+@import "section-button.scss";
+@import "visit.scss";
+@import "news.scss";
+@import "subscribe.scss";
+@import "footer.scss";
+
+body {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  background-color: $color-bg-light;
+  color: $some-color;
+}
+
+.container {
+  max-width: 1170px;
+  //height: 100%;
+  margin: auto;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 60px;
+  width: 270px;
+
+  color: #fff;
+  background-color: $secondary-color;
+  text-decoration: none;
+}

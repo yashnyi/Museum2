@@ -1,0 +1,32 @@
+.news {
+
+  &__container {
+    padding: 120px 0 180px;
+  }
+
+  &__header {
+    text-align: center;
+    position: relative;
+    left: -200px;
+  }
+
+  &__items {
+    display: flex;
+    margin-top: 75px;
+    margin-bottom: 95px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 30px;
+  }
+
+  &__desciption {
+    color: $color-text-gray;
+  }
+}

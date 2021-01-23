@@ -1,0 +1,45 @@
+.exhibition {
+  position: relative;
+
+  &__img {
+    position: absolute;
+
+    &--first {
+      top: 60px;
+      left: 0;
+    }
+
+    &--second {
+      top: 880px;
+      right: 0;
+    }
+
+    &--third {
+      bottom: 50px;
+      left: 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 160px 55px 0;
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+
+    & > * {
+      width: 50%;
+    }
+
+    & > :first-child {
+      margin-right: 20px;
+    }
+  }
+}

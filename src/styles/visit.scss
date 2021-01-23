@@ -1,0 +1,43 @@
+.visit {
+  position: relative;
+  height: 800px;
+
+  background-color: $color-bg-dark;
+  color: $color-bg-light;
+
+  &__container {
+    padding: 190px 0 160px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    position: relative;
+    left: 40%;
+    width: 700px;
+  }
+
+  &__info {
+    position: relative;
+    left: 48.5%;
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+  }
+
+  &__description {
+    margin-bottom: 60px;
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 746px;
+    height: 800px;
+
+    background-image: url(/images/visit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

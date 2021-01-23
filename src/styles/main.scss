@@ -1,7 +1,77 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+.main {
+  background-color: $main-dark-color;
+  color: $color-bg-light;
 
-body {
-  background: $c-gray;
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 720px;
+    padding: 0 55px;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      display: block;
+      width: 673px;
+      height: 753px;
+
+      content: "";
+
+      background-image: url(/images/main-image.png);
+      background-repeat: no-repeat;
+
+      z-index: 1;
+    }
+  }
+
+  & > * {
+    margin-bottom: 10px;
+  }
+
+  &__text-block {
+    margin-left: 100px;
+    margin-bottom: 110px;
+  }
+
+  &__descr {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  &__date {
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.7;
+    bottom: -20px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 100px;
+      bottom: 45%;
+
+      width: 800px;
+      height: 1px;
+
+      background-color: $color-bg-light;
+      opacity: 0.3;
+
+      overflow: hidden;
+      z-index: 0;
+    }
+  }
+
+  &__img-descr {
+    position: absolute;
+    top: 50%;
+    right: 4%;
+  }
 }
