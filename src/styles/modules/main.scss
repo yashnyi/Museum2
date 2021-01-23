@@ -1,6 +1,6 @@
 .main {
-  background-color: $main-dark-color;
-  color: $color-bg-light;
+  background-color: $color-dark;
+  color: $color-light;
 
   &__container {
     position: relative;
@@ -61,7 +61,7 @@
       width: 800px;
       height: 1px;
 
-      background-color: $color-bg-light;
+      background-color: $color-light;
       opacity: 0.3;
 
       overflow: hidden;

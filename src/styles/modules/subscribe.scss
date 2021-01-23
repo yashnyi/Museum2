@@ -1,6 +1,6 @@
 .subscribe {
   background-color: $color-red;
-  color: $color-bg-light;
+  color: $color-light;
 
   &__container {
     padding: 160px 0;
@@ -33,13 +33,13 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    border-bottom: 1px solid $color-bg-light;
-    color: $color-bg-light;
+    border-bottom: 1px solid $color-light;
+    color: $color-light;
 
     outline: none;
 
     &::placeholder {
-      color: $color-bg-light;
+      color: $color-light;
     }
   }
 }

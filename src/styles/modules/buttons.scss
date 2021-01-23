@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   text-decoration: none;
-  color: $color-text-black;
+  color: $color-black;
 
   &::after {
     content: "";
@@ -11,6 +11,6 @@
     left: 20px;
     width: 70px;
     height: 1px;
-    background-color: $color-text-black;
+    background-color: $color-black;
   }
 }

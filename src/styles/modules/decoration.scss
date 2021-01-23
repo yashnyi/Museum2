@@ -4,10 +4,10 @@
   height: 576px;
 
   &__text {
-    text-shadow: -1px 0 $color-bg-dark,
-      0 1px $color-bg-dark,
-      1px 0 $color-bg-dark,
-      0 -1px $color-bg-dark;
+    text-shadow: -1px 0 $color-dark,
+      0 1px $color-dark,
+      1px 0 $color-dark,
+      0 -1px $color-dark;
 
     &::before {
       content: "Мистецтво ХХ ст. - ХХI ст.";
@@ -27,7 +27,7 @@
       line-height: 100%;
       text-transform: uppercase;
 
-      color: $color-bg-light;
+      color: $color-light;
       opacity: 0.3;
       z-index: -1;
       pointer-events: none;
