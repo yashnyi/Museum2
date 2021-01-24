@@ -1,12 +1,11 @@
 .header {
-  background-color: $color-dark;
-  color: $color-light;
+  @include dark-background;
+  padding: 20px 0 33px;
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 55px 30px;
   }
 
   &__logo {

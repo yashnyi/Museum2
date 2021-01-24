@@ -1,13 +1,7 @@
 .visit {
-  position: relative;
+  @include dark-background;
   height: 800px;
-
-  background-color: $color-dark;
-  color: $color-light;
-
-  &__container {
-    padding: 190px 0 160px;
-  }
+  padding: 190px 0 160px;
 
   &__title {
     margin-bottom: 60px;

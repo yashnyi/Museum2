@@ -1,16 +1,35 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 60px;
+  width: 270px;
+
+  color: $color-light;
+  background-color: $color-red;
+
+  text-decoration: none;
+}
+
 .section-button {
   display: flex;
   justify-content: flex-end;
-  text-decoration: none;
+
   color: $color-black;
+
+  text-decoration: none;
 
   &::after {
     content: "";
     position: relative;
+
     top: 7px;
     left: 20px;
+
     width: 70px;
     height: 1px;
+
     background-color: $color-black;
   }
 }

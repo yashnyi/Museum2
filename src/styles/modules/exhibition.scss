@@ -1,5 +1,10 @@
 .exhibition {
-  position: relative;
+  padding: 160px 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__img {
     position: absolute;
@@ -18,12 +23,6 @@
       bottom: 50px;
       left: 0;
     }
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    padding: 160px 55px 0;
   }
 
   &__header {

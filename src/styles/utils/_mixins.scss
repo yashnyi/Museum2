@@ -1,3 +1,8 @@
+@mixin dark-background {
+  background-color: $color-dark;
+  color: $color-light;
+}
+
 //@mixin hover($_property, $_toValue) {
 //  transition: #{$_property} 0.3s;
 //  &:hover {
@@ -9,14 +14,6 @@
 //@mixin box($width, $height: $width) {
 //  width: $width;
 //  height: $height;
-//}
-
-//
-//@mixin placeholder {
-//  ::-webkit-input-placeholder {@content}
-//  :-moz-placeholder           {@content}
-//  ::-moz-placeholder          {@content}
-//  :-ms-input-placeholder      {@content}
 //}
 
 //@mixin pseudo($display: block, $pos: absolute, $content: ''){

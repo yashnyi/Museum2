@@ -1,11 +1,6 @@
 .footer {
-  background-color: $color-dark;
-  color: $color-light;
-  padding: 0 55px;
-
-  &__container {
-    padding: 160px 0 60px;
-  }
+  @include dark-background;
+  padding: 160px 0 60px;
 
   &__row {
     display: flex;
@@ -29,7 +24,7 @@
     margin-left: 15px;
   }
 
-  &__base-info {
+  &__bottom {
     display: flex;
     justify-content: center;
     align-items: center;
