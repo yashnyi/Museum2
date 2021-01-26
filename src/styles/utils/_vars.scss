@@ -19,6 +19,11 @@ $breakpoints: ("phone": 400px,
 "desktop": 1248px,
 "desktop-wide": 1440px);
 
-// Fonts
+// Fonts:
 $font-base: "Raleway", sans-serif;
 $font-title: "Playfair Display", serif;
+
+// Sandwich:
+$sandwich-width: 25px;
+$sandwich-height: 2px;
+$sandwich-spacing: 7px;

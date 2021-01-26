@@ -26,27 +26,62 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a href="#" class="header-top__logo">
+        <a href="#" class="header__logo">
           <img src="./images/svg/logo.svg" alt="logo link image">
         </a>
-        <div class="header-top__toggle">
-          - - -  UA
+        <div class="header__tools">
+          <div class="sandwich">
+            <div class="sandwich__button"></div>
+          </div>
+          <div class="header__lang">UA</div>
         </div>
       </div>
     </header>
 
-    <main>
-      <section class="main">
-        <div class="container main__container">
-          <span class="main__text text-main">10 серпня - 10 листопада</span>
-          <h2 class="main__title text-title text-title--big">Мистецтво</h2>
-          <div class="main__text-block">
-            <h2 class="main__title text-title text-title--big">XIX - XX ст.</h2>
-            <span class="main__descr text-main">Внесок українських митців у світову <br> культуру 19-20 ст.</span>
+    <main class="main">
+      <section class="basic">
+        <div class="container basic__container">
+          <span class="basic__text text-main">10 серпня - 10 листопада</span>
+          <h2 class="basic__title text-title text-title--big">Мистецтво</h2>
+          <div class="basic__text-block">
+            <h2 class="basic__title text-title text-title--big">XIX - XX ст.</h2>
+            <span class="basic__descr text-main">Внесок українських митців у світову <br> культуру 19-20 ст.</span>
             <a class="button" href="#">Купити квиток</a>
           </div>
-          <span class="main__date">10.08 - 10.10</span>
-          <span class="main__img-descr text-main">Дівчина з Поділля <br>В. Тропінін</span>
+          <span class="basic__date">10.08 - 10.10</span>
+          <span class="basic__img-descr text-main">Дівчина з Поділля <br>В. Тропінін</span>
+        </div>
+      </section>
+
+      <section class="menu">
+        <div class="container menu__container">
+          <div class="menu__info info">
+            <div class="info__block">
+              Розклад сьогодні:
+              <span class="info__details">12:00 - 19:00</span>
+            </div>
+            <div class="info__block">
+              Адреса:
+              <a class="info__details" href="https://goo.gl/maps/HCT6wpKnSQuzj8b28">Київ, вул. М. Грушевського, 6</a>
+            </div>
+          </div>
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a href="#" class="menu__link">Спланувати візит</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="menu__link">Виставки та події</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="menu__link">Колекція</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu__buttons">
+            <a href="#" class="button">Купити квиток</a>
+            <a href="#" class="button button--transparent">Стати членом</a>
+          </div>
         </div>
       </section>
 

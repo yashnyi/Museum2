@@ -10,6 +10,11 @@
   background-color: $color-red;
 
   text-decoration: none;
+
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid $color-light;
+  }
 }
 
 .section-button {

@@ -1,6 +1,6 @@
 .header {
   @include dark-background;
-  padding: 20px 0 33px;
+  padding: 20px 0 30px;
 
   &__container {
     display: flex;
@@ -13,5 +13,9 @@
     align-items: center;
     width: 123px;
     height: 40px;
+  }
+
+  &__tools {
+    display: flex;
   }
 }
