@@ -1,4 +1,4 @@
-.info-block {
+.article {
   display: flex;
   flex-direction: column;
 
@@ -35,5 +35,10 @@
 
   &__description {
     margin-bottom: 55px;
+  }
+
+  &__image {
+    margin-bottom: 30px;
+    @include box(370px);
   }
 }

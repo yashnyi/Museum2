@@ -3,17 +3,16 @@
   color: $color-light;
 }
 
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
 //@mixin hover($_property, $_toValue) {
 //  transition: #{$_property} 0.3s;
 //  &:hover {
 //    #{$_property}: $_toValue;
 //  }
-//}
-
-//
-//@mixin box($width, $height: $width) {
-//  width: $width;
-//  height: $height;
 //}
 
 //@mixin pseudo($display: block, $pos: absolute, $content: ''){
