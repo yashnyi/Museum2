@@ -1,44 +1,23 @@
-.text-main {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-
-  &--red {
-    color: $color-red;
-  }
-
-  &--events {
-    font-size: 14px;
-    font-weight: 200;
-    line-height: 20px;
-  }
-
-  &--gray {
-    color: $color-gray;
-  }
-}
-
-.text-title {
-  font-family: "Playfair Display", serif;
+@mixin text-title {
+  font-family: $font-title;
   font-size: 48px;
   font-weight: 700;
-
-  &--smaller {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  &--small {
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-  &--big {
-    font-size: 96px;
-  }
 }
 
-.text-description {
-  line-height: 24px;
-  color: $color-gray;
+@mixin text-title--big {
+  @include text-title;
+  font-size: 96px;
+  line-height: 100%;
+}
+
+@mixin text-title--small {
+  @include text-title;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+@mixin text-title--smallest {
+  @include text-title;
+  font-size: 20px;
+  line-height: 25px;
 }

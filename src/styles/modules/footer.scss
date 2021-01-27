@@ -17,6 +17,7 @@
   }
 
   &__title {
+    @include text-title--small;
     margin-bottom: 40px;
   }
 
@@ -53,5 +54,15 @@
     :not(:last-child) {
       margin-right: 20px;
     }
+  }
+
+  &__phone {
+    display: flex;
+  }
+
+  &__phone-num {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
   }
 }

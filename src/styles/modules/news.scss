@@ -2,6 +2,7 @@
   padding: 120px 0 180px;
 
   &__header {
+    @include text-title;
     text-align: center;
     position: relative;
     left: -200px;

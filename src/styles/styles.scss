@@ -1,3 +1,4 @@
+@import "../../node_modules/reset-css/sass/reset";
 @import "utils/utils";
 
 *,
@@ -9,14 +10,19 @@
 html {
   font-size: $size-base;
   font-family: $font-base;
+
   background-color: $color-light;
   color: $color-black;
+
   height: 100%;
 }
 
 body {
   height: 100%;
   scroll-behavior: smooth;
+  line-height: 150%;
+  font-style: normal;
+  font-weight: 400;
 
   overflow-x: hidden;
 }

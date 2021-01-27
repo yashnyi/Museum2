@@ -26,6 +26,7 @@
   }
 
   &__header {
+    @include text-title;
     text-align: center;
   }
 
