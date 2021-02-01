@@ -5,12 +5,9 @@
   cursor: pointer;
   padding: 5px 0;
   width: 50px;
+  background-color: $color-dark;
 
   z-index: 20;
-
-  &--active {
-    border: 1px solid $color-light;
-  }
 
   &__lang {
     margin-right: 5px;
@@ -18,18 +15,30 @@
 
   &__lang-list {
     position: absolute;
-    display: none;
     width: 50px;
-    top: 26px;
+    top: 34px;
+
+    color: $color-dark;
+    visibility: hidden;
+
+    z-index: -1;
 
     &--active {
-      display: block;
-      border: 1px solid $color-light;
+      visibility: visible;
+
+      box-shadow: 8px 9px 22px -7px #212b2b;
+      background-color: $color-light;
+
+      transition: background-color 0.35s ease-in, box-shadow 0.4s ease-in;
     }
   }
 
   &__lang-item {
     padding: 5px 0 5px 7px;
+
+    &:hover {
+      font-weight: 700;
+    }
   }
 
   &__icon {

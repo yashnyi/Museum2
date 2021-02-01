@@ -18,20 +18,24 @@
 }
 
 .section-button {
-  display: flex;
-  justify-content: flex-end;
+  position: relative;
+  display: block;
+  float: right;
+  text-align: right;
 
+  padding-right: 100px;
   color: $color-black;
 
   text-decoration: none;
 
   &::after {
     content: "";
-    position: relative;
+    position: absolute;
 
-    top: 7px;
-    left: 20px;
+    bottom: 50%;
+    right: 0;
 
+    display: block;
     width: 70px;
     height: 1px;
 
