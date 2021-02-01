@@ -10,6 +10,7 @@
   }
 
   &__block {
+    position: relative;
     display: flex;
     justify-content: space-between;
   }
@@ -18,14 +19,27 @@
     max-width: 570px;
   }
 
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    opacity: 0;
+
+    transition: opacity 1s ease, transform 0.4s ease;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+
   &__input {
     border: none;
     background-image: none;
     background-color: transparent;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     box-shadow: none;
 
+    margin-right: 50px;
     width: 300px;
 
     font-family: "Raleway", sans-serif;
@@ -39,6 +53,12 @@
 
     &::placeholder {
       color: $color-light;
+    }
+
+    &:focus {
+      .subscribe__button {
+        display: block;
+      }
     }
   }
 }

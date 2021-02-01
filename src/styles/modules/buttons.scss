@@ -8,8 +8,17 @@
 
   color: $color-light;
   background-color: $color-red;
-
   text-decoration: none;
+
+  transition: background-color 0.35s ease-out,
+    color 0.35s ease-out,
+    transform 0.5s ease;
+
+  &:hover {
+    background-color: $color-red-hover;
+    transform: scale(1.05);
+    color: $color-light-hover;
+  }
 
   &--transparent {
     background-color: transparent;
@@ -28,6 +37,8 @@
 
   text-decoration: none;
 
+  transition: transform 0.35s linear, color 0.5s ease;
+
   &::after {
     content: "";
     position: absolute;
@@ -40,5 +51,14 @@
     height: 1px;
 
     background-color: $color-black;
+  }
+
+  &:hover {
+    transform: translateX(-10px);
+    color: $color-red-hover;
+
+    &::after {
+      background-color: $color-red;
+    }
   }
 }

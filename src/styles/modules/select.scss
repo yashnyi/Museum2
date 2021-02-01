@@ -2,11 +2,12 @@
   position: relative;
   display: flex;
   justify-content: center;
-  cursor: pointer;
+
   padding: 5px 0;
   width: 50px;
-  background-color: $color-dark;
 
+  background-color: $color-dark;
+  cursor: pointer;
   z-index: 20;
 
   &__lang {

@@ -4,6 +4,8 @@ $color-dark: #3f5252;
 $color-black: #1c1b29;
 $color-gray: #504f5e;
 $color-red: #cd4d31;
+$color-red-hover: #b3432b;
+$color-light-hover: #e8ebea;
 
 // Sizes:
 $size-base: 16px;
@@ -27,3 +29,22 @@ $font-title: "Playfair Display", serif;
 $sandwich-width: 25px;
 $sandwich-height: 2px;
 $sandwich-spacing: 7px;
+
+//Animations:
+@keyframes slideToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes jumping {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}

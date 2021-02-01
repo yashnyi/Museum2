@@ -28,8 +28,9 @@
   }
 
   &__text-block {
-    margin-left: 100px;
+    transform: translateX(100px);
     margin-bottom: 110px;
+    animation: 1.5s ease-out 0s 1 slideToLeft;
   }
 
   &__title {

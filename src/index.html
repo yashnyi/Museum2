@@ -284,7 +284,14 @@
             <p class="subscribe__info">Першими дізнавайтесь про новини музею та розіграші, отримуйте запрошення на події та читайте статті від кураторів</p>
             <input class="subscribe__input"
                    type="email"
-                   placeholder="e-mail">
+                   placeholder="e-mail"
+                   onclick="document.getElementById( 'subscribe__button' ).style.opacity = '1'"
+            >
+            <a href="#"
+               id="subscribe__button"
+               class="subscribe__button">
+              <img src="./images/svg/arrow-big.svg" alt="arrow icon button">
+            </a>
           </div>
         </div>
       </section>
@@ -313,32 +320,44 @@
               </li>
             </ul>
             <ul class="footer__media">
-              <li>
+              <li class="footer__item">
                 <a href="https://facebook.com"
+                   class="footer__link"
                    target="_blank"
                    rel="noopener">
-                  <img src="./images/svg/facebook.svg" alt="facebook link icon">
+                  <img class="footer__icon"
+                       src="./images/svg/facebook.svg"
+                       alt="facebook link icon">
                 </a>
               </li>
-              <li>
+              <li class="footer__item">
                 <a href="https://twitter.com"
+                   class="footer__link"
                    target="_blank"
                    rel="noopener">
-                  <img src="./images/svg/twitter.svg" alt="twitter link icon">
+                  <img class="footer__icon"
+                       src="./images/svg/twitter.svg"
+                       alt="twitter link icon">
                 </a>
               </li>
-              <li>
+              <li class="footer__item">
                 <a href="https://telegram.org/"
+                   class="footer__link"
                    target="_blank"
                    rel="noopener">
-                  <img src="./images/svg/telegram.svg" alt="telegram link icon">
+                  <img class="footer__icon"
+                       src="./images/svg/telegram.svg"
+                       alt="telegram link icon">
                 </a>
               </li>
-              <li>
+              <li class="footer__item">
                 <a href="https://instagram.com"
+                   class="footer__link"
                    target="_blank"
                    rel="noopener">
-                  <img src="./images/svg/instagram.svg" alt="instagram link icon">
+                  <img class="footer__icon"
+                       src="./images/svg/instagram.svg"
+                       alt="instagram link icon">
                 </a>
               </li>
             </ul>
@@ -405,6 +424,11 @@
           <span>© 2010 — 2021</span>
           <a class="footer__link" href="#">Privacy — Terms</a>
         </div>
+        <a class="footer__button" href="#">
+          <img class="footer__button-image"
+               src="./images/svg/arrow-big.svg"
+               alt="arrow button icon">
+        </a>
       </div>
     </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
