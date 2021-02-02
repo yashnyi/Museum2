@@ -2,15 +2,20 @@
   @include dark-background;
   position: absolute;
   top: 90px;
-  width: 100vw;
+  left: 0;
+  width: 100%;
 
-  transform: translateX(100vw);
+  transform: translateX(100%);
   transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
 
   z-index: 10;
 
+  @media screen and (max-width: 1023px) {
+    top: 70px;
+  }
+
   &--active {
-    transform: translateX(-10px);
+    transform: translateX(0%);
   }
 
   &__container {
@@ -18,6 +23,14 @@
     flex-direction: column;
 
     height: 720px;
+
+    @media screen and (max-width: 1023px) {
+      height: 690px;
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 510px;
+    }
 
     &::before {
       position: absolute;
@@ -32,19 +45,43 @@
 
       background-image: url(/images/content/menu-1.png);
       background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
 
       z-index: 1;
+
+      @media screen and (max-width: 1199px) {
+        height: 450px;
+      }
+
+      @media screen and (max-width: 1023px) {
+        display: none;
+      }
     }
   }
 
   &__info {
     display: flex;
     margin: 10px 0 80px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
   }
 
   &__list-item {
     &:not(:last-child) {
       margin-bottom: 60px;
+
+      @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+      }
     }
   }
 
@@ -56,6 +93,11 @@
 
     color: $color-light;
     text-decoration: none;
+
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 
   &__buttons {
@@ -63,9 +105,18 @@
     display: flex;
     margin-top: 120px;
 
+    @media screen and (max-width: 767px) {
+      margin-top: 80px;
+      flex-direction: column;
+    }
+
     & > * {
       &:not(:last-child) {
         margin-right: 30px;
+
+        @media screen and (max-width: 767px) {
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -80,6 +131,10 @@
 
       background-color: $color-light;
       opacity: 0.3;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
   }
 }

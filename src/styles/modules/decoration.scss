@@ -1,7 +1,11 @@
 .decoration {
   position: relative;
-  width: 572px;
+  width: 576px;
   height: 576px;
+
+  @media screen and (max-width: 1023px) {
+    height: 350px;
+  }
 
   &__text {
     text-shadow: -1px 0 $color-dark,
@@ -32,6 +36,21 @@
       opacity: 0.3;
       z-index: -1;
       pointer-events: none;
+
+      @media screen and (max-width: 1199px) {
+        top: 60px;
+        font-size: 122px;
+        width: 480px;
+      }
+
+      @media screen and (max-width: 1023px) {
+        font-size: 72px;
+        width: 300px;
+      }
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
 
     &--second {

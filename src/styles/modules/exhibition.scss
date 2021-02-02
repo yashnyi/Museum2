@@ -1,6 +1,14 @@
 .exhibition {
   padding: 160px 0;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 115px 0;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -12,22 +20,61 @@
     &--first {
       top: 60px;
       left: 0;
+
+      @media screen and (max-width: 1199px) {
+        width: 450px;
+      }
+
+      @media screen and (max-width: 1023px) {
+        width: 293px;
+        top: 130px;
+      }
     }
 
     &--second {
       top: 880px;
       right: 0;
+
+      @media screen and (max-width: 1199px) {
+        top: 950px;
+        height: 350px;
+      }
+
+      @media screen and (max-width: 1023px) {
+        top: 670px;
+        height: 250px;
+      }
     }
 
     &--third {
       bottom: 50px;
       left: 0;
+
+      @media screen and (max-width: 1199px) {
+        height: 450px;
+      }
+
+      @media screen and (max-width: 1023px) {
+        height: 255px;
+        bottom: 30px;
+      }
+    }
+  }
+
+  &__button {
+    @media screen and (max-width: 1023px) {
+      display: none;
     }
   }
 
   &__header {
     @include text-title;
     text-align: center;
+    line-height: 100%;
+
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 55px;
+    }
   }
 
   &__block {
@@ -36,6 +83,10 @@
 
     & > * {
       width: 50%;
+
+      @media screen and (max-width: 1023px) {
+        min-width: 325px;
+      }
     }
 
     & > :first-child {

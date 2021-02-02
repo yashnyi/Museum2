@@ -1,32 +1,58 @@
 .subscribe {
   padding: 160px 0;
 
+  @media screen and (max-width: 1023px) {
+    padding: 110px 0;
+  }
+
   background-color: $color-red;
   color: $color-light;
 
   &__header {
     @include text-title;
     margin-bottom: 40px;
+    line-height: 57.6px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 
   &__block {
     position: relative;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+    }
   }
 
   &__info {
     max-width: 570px;
+
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 80px;
+    }
   }
 
   &__button {
     position: absolute;
     right: 0;
-    top: 50%;
+    bottom: 0;
 
     opacity: 0;
 
     transition: opacity 1s ease, transform 0.4s ease;
+
+    @media screen and (max-width: 1023px) {
+      right: 37%;
+    }
+
+    @media screen and (max-width: 767px) {
+      right: 5%;
+    }
 
     &:hover {
       transform: scale(1.25);
@@ -50,6 +76,10 @@
     color: $color-light;
 
     outline: none;
+
+    @media screen and (max-width: 767px) {
+      width: 230px;
+    }
 
     &::placeholder {
       color: $color-light;

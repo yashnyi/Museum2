@@ -11,16 +11,6 @@ $color-light-hover: #e8ebea;
 $size-base: 16px;
 $size-content: 1280px;
 
-// Breakpoints:
-$breakpoints: ("phone": 400px,
-"phone-wide": 480px,
-"phablet": 560px,
-"tablet-small": 640px,
-"tablet": 768px,
-"tablet-wide": 1024px,
-"desktop": 1248px,
-"desktop-wide": 1440px);
-
 // Fonts:
 $font-base: "Raleway", sans-serif;
 $font-title: "Playfair Display", serif;
@@ -31,20 +21,29 @@ $sandwich-height: 2px;
 $sandwich-spacing: 7px;
 
 //Animations:
-@keyframes slideToLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100px);
-  }
-}
-
 @keyframes jumping {
   0% {
     transform: translateY(-5px);
   }
   100% {
     transform: translateY(5px);
+  }
+}
+
+@keyframes fadeInFull {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes fadeInMid {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(60px);
   }
 }

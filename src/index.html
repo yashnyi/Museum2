@@ -2,7 +2,7 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Національний художній музей України</title>
     <link rel="stylesheet" href="styles/styles.scss">
     <link rel="apple-touch-icon"
@@ -23,7 +23,6 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
   </head>
-
   <body>
     <header class="header">
       <div class="container header__container">
@@ -107,7 +106,7 @@
               <div class="decoration"></div>
             </div>
             <div class="exhibition__col">
-              <article class="article">
+              <article class="article article--exception">
                 <span class="article__note article__note--exception">
                   11.07 - 22.09
                 </span>
@@ -117,7 +116,7 @@
                 <p class="article__details">
                   Виставковий проект «Ангели» – знакова подія для української культури і водночас наймасштабніший...
                 </p>
-                <a href="#" class="button">Купити квиток</a>
+                <a href="#" class="button exhibition__button">Купити квиток</a>
               </article>
             </div>
           </div>
@@ -136,7 +135,7 @@
                 <p class="article__details">
                   Знакові роботи Алли Горської, Миколи Самокиша, Федора Кричевського та інших митців.
                 </p>
-                <a href="#" class="button">Купити квиток</a>
+                <a href="#" class="button exhibition__button">Купити квиток</a>
               </article>
             </div>
             <div class="exhibition__col">
@@ -165,7 +164,7 @@
                 <p class="article__details">
                   Визначні приклади стародавнього українського іконопису та живопису
                 </p>
-                <a href="#" class="button">Купити квиток</a>
+                <a href="#" class="button exhibition__button">Купити квиток</a>
               </article>
             </div>
           </div>
@@ -183,9 +182,12 @@
                 <div class="events__time">13:00</div>
               </div>
               <article class="article article--wide">
-                <span class="article__note article__note--small">
-                  Екскурсія
-                </span>
+                <div class="events__datatime-small">
+                  <span class="events__datatime-mini">14 серпня, 13:00</span>
+                  <span class="article__note article__note--small">
+                    Екскурсія
+                  </span>
+                </div>
                 <h4 class="article__title">
                   Кураторські екскурсії від Павла Гудімова
                 </h4>
@@ -209,9 +211,12 @@
                 <div class="events__time">14:00</div>
               </div>
               <article class="article article--wide">
-                <span class="article__note article__note--small">
-                  Майстер-клас
-                </span>
+                <div class="events__datatime-small">
+                  <span class="events__datatime-mini">18 серпня, 14:00</span>
+                  <span class="article__note article__note--small">
+                    Майстер-клас
+                  </span>
+                </div>
                 <h4 class="article__title">
                   Подорож до Австралії
                 </h4>

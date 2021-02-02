@@ -34,6 +34,14 @@ body {
   max-width: $size-content;
   padding: 0 55px;
   width: 100%;
+
+  @media screen and (max-width: 1023px) {
+    padding: 0 99px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
 }
 
 // Normalized:

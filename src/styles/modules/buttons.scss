@@ -39,6 +39,13 @@
 
   transition: transform 0.35s linear, color 0.5s ease;
 
+  @media screen and (max-width: 1023px) {
+    text-align: center;
+    float: none;
+    padding-right: 0;
+    margin-top: 50px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -51,11 +58,22 @@
     height: 1px;
 
     background-color: $color-black;
+
+    @media screen and (max-width: 1023px) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 30px;
+      width: 170px;
+    }
   }
 
   &:hover {
     transform: translateX(-10px);
     color: $color-red-hover;
+
+    @media screen and (max-width: 1023px) {
+      transform: none;
+    }
 
     &::after {
       background-color: $color-red;

@@ -9,6 +9,14 @@
 
     height: 720px;
 
+    @media screen and (max-width: 1023px) {
+      height: 690px;
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 510px;
+    }
+
     &::before {
       position: absolute;
       right: 0;
@@ -22,25 +30,83 @@
 
       background-image: url(/images/general/main.png);
       background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
 
       z-index: 1;
+
+      @media screen and (max-width: 1199px) {
+        height: 650px;
+      }
+
+      @media screen and (max-width: 1023px) {
+        height: 445px;
+      }
+
+      @media screen and (max-width: 767px) {
+        height: 275px;
+        right: -80px;
+        z-index: 3;
+        width: 245px;
+        background-position: bottom;
+      }
     }
   }
 
+  &__text {
+    margin-top: 85px;
+    margin-bottom: 15px;
+  }
+
   &__text-block {
-    transform: translateX(100px);
     margin-bottom: 110px;
-    animation: 1.5s ease-out 0s 1 slideToLeft;
+    animation: 1s ease-out 0s 1 fadeInFull;
+    transform: translateX(100px);
+
+    @media screen and (max-width: 1199px) {
+      animation: 1s ease-out 0s 1 fadeInMid;
+      transform: translateX(60px);
+    }
+
+    @media screen and (max-width: 1023px) {
+      z-index: 2;
+    }
+
+    @media screen and (max-width: 767px) {
+      animation: none;
+      transform: none;
+    }
   }
 
   &__title {
     @include text-title--big;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 86px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      font-size: 76px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 48px;
+    }
   }
 
   &__details {
     display: block;
     margin-top: 40px;
     margin-bottom: 60px;
+
+    @media screen and (max-width: 767px) {
+      margin: 30px 0 50px;
+      max-width: 260px;
+
+      & br {
+        display: none;
+      }
+    }
   }
 
   &__date {
@@ -48,8 +114,12 @@
     font-size: 14px;
     font-weight: 700;
     opacity: 0.7;
-    bottom: -20px;
+    bottom: 0;
     position: relative;
+
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
 
     &::after {
       content: "";
@@ -73,5 +143,13 @@
     position: absolute;
     top: 50%;
     right: 4%;
+
+    @media screen and (max-width: 1199px) {
+      top: 55%;
+    }
+
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
   }
 }
