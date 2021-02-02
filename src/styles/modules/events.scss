@@ -1,7 +1,7 @@
 .events {
   padding: 260px 0 185px;
 
-  @media screen and (max-width: 1023px) {
+  @include screen-l {
     padding: 0 0 115px;
   }
 
@@ -12,12 +12,12 @@
     text-align: center;
     margin-bottom: 65px;
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       left: 0;
       text-align: left;
     }
 
-    @media screen and (max-width: 767px) {
+    @include screen-m {
       font-size: 36px;
       line-height: 45px;
     }
@@ -40,7 +40,7 @@
   &__wrapper {
     display: flex;
 
-    @media screen and (max-width: 767px) {
+    @include screen-m {
       flex-direction: column;
     }
   }
@@ -49,21 +49,21 @@
     margin-left: 50px;
     width: 170px;
 
-    @media screen and (max-width: 1199px) {
+    @include screen-xl {
       margin-left: 10px;
     }
   }
 
   &__datatime-small {
-    @media screen and (max-width: 767px) {
+    @include screen-m {
       display: flex;
     }
   }
 
   &__datatime-mini {
     display: none;
-    
-    @media screen and (max-width: 767px) {
+
+    @include screen-m {
       display: block;
       margin-right: 20px;
       color: $color-red;
@@ -86,7 +86,7 @@
     font-size: 55px;
     line-height: 55px;
 
-    @media screen and (max-width: 767px) {
+    @include screen-m {
       display: none;
     }
   }
@@ -101,21 +101,21 @@
     font-size: 36px;
     line-height: 36px;
 
-    @media screen and (max-width: 1199px) {
+    @include screen-xl {
       left: 20px;
     }
 
-    @media screen and (max-width: 767px) {
+    @include screen-m {
       display: none;
     }
   }
 
   &__image {
-    @media screen and (max-width: 1199px) {
+    @include screen-xl {
       width: 300px;
     }
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       display: none;
     }
   }

@@ -2,8 +2,12 @@
   @include dark-background;
   padding: 160px 0 60px;
 
-  @media screen and (max-width: 1023px) {
+  @include screen-l {
     padding: 120px 0 35px;
+  }
+
+  @include screen-l {
+    padding: 80px 0 35px;
   }
 
   &__container {
@@ -15,11 +19,13 @@
     justify-content: center;
     margin-bottom: 75px;
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       flex-wrap: wrap;
     }
 
-    @media screen and (max-width: 767px) {
+    @include screen-m {
+      display: flex;
+      justify-content: flex-start;
       margin-bottom: 0;
     }
   }
@@ -27,7 +33,7 @@
   &__col {
     min-width: 265px;
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       margin-bottom: 60px;
     }
 
@@ -50,13 +56,13 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 767px) {
+    @include screen-m {
       flex-direction: column;
     }
 
     span {
       margin-right: 40px;
-      @media screen and (max-width: 767px) {
+      @include screen-m {
         margin-right: 0;
       }
     }

@@ -1,11 +1,7 @@
 .exhibition {
   padding: 160px 0;
 
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media screen and (max-width: 1023px) {
+  @include screen-l {
     padding: 115px 0;
   }
 
@@ -21,13 +17,28 @@
       top: 60px;
       left: 0;
 
-      @media screen and (max-width: 1199px) {
+      @include screen-xl {
         width: 450px;
       }
 
-      @media screen and (max-width: 1023px) {
+      @include screen-l {
         width: 293px;
         top: 130px;
+      }
+
+      @include screen-m {
+        left: inherit;
+        right: 0;
+        top: 290px;
+        width: 240px;
+
+        transform: scale(-1, 1);
+      }
+
+      @include screen-s {
+        width: 320px;
+        top: 170px;
+        right: -85px;
       }
     }
 
@@ -35,14 +46,26 @@
       top: 880px;
       right: 0;
 
-      @media screen and (max-width: 1199px) {
+      @include screen-xl {
         top: 950px;
         height: 350px;
       }
 
-      @media screen and (max-width: 1023px) {
+      @include screen-l {
         top: 670px;
         height: 250px;
+      }
+
+      @include screen-m {
+        left: -20px;
+        top: 770px;
+        height: 220px;
+        transform: scale(-1, -1);
+      }
+
+      @include screen-s {
+        top: 720px;
+        left: -140px;
       }
     }
 
@@ -50,19 +73,31 @@
       bottom: 50px;
       left: 0;
 
-      @media screen and (max-width: 1199px) {
+      @include screen-xl {
         height: 450px;
       }
 
-      @media screen and (max-width: 1023px) {
+      @include screen-l {
         height: 255px;
         bottom: 30px;
+      }
+
+      @include screen-m {
+        position: relative;
+        height: 200px;
+        bottom: -100px;
+        left: inherit;
+        right: 90px;
+      }
+
+      @include screen-s {
+        right: 200px;
       }
     }
   }
 
   &__button {
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       display: none;
     }
   }
@@ -72,8 +107,14 @@
     text-align: center;
     line-height: 100%;
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       margin-bottom: 55px;
+    }
+
+    @include screen-m {
+      font-size: 36px;
+      line-height: 45px;
+      text-align: left;
     }
   }
 
@@ -81,16 +122,26 @@
     display: flex;
     align-items: center;
 
-    & > * {
-      width: 50%;
-
-      @media screen and (max-width: 1023px) {
-        min-width: 325px;
-      }
-    }
-
     & > :first-child {
       margin-right: 20px;
+    }
+  }
+
+  &__col {
+    flex: 1;
+
+    @include screen-l {
+      min-width: 325px;
+    }
+
+    @include screen-m {
+      //  asdasd
+    }
+
+    &--first {
+      @include screen-m {
+        order: 2;
+      }
     }
   }
 }

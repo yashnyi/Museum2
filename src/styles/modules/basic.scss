@@ -9,11 +9,11 @@
 
     height: 720px;
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       height: 690px;
     }
 
-    @media screen and (max-width: 767px) {
+    @include screen-m {
       height: 510px;
     }
 
@@ -35,20 +35,26 @@
 
       z-index: 1;
 
-      @media screen and (max-width: 1199px) {
+      @include screen-xl {
         height: 650px;
       }
 
-      @media screen and (max-width: 1023px) {
+      @include screen-l {
         height: 445px;
-      }
-
-      @media screen and (max-width: 767px) {
-        height: 275px;
         right: -80px;
         z-index: 3;
-        width: 245px;
+        width: 420px;
         background-position: bottom;
+      }
+
+      @include screen-m {
+        height: 350px;
+        width: 330px;
+      }
+
+      @include screen-s {
+        height: 275px;
+        width: 245px;
       }
     }
   }
@@ -63,16 +69,16 @@
     animation: 1s ease-out 0s 1 fadeInFull;
     transform: translateX(100px);
 
-    @media screen and (max-width: 1199px) {
+    @include screen-xl {
       animation: 1s ease-out 0s 1 fadeInMid;
       transform: translateX(60px);
     }
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       z-index: 2;
     }
 
-    @media screen and (max-width: 767px) {
+    @include screen-m {
       animation: none;
       transform: none;
     }
@@ -81,15 +87,15 @@
   &__title {
     @include text-title--big;
 
-    @media screen and (max-width: 1199px) {
+    @include screen-xl {
       font-size: 86px;
     }
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       font-size: 76px;
     }
 
-    @media screen and (max-width: 767px) {
+    @include screen-m {
       font-size: 48px;
     }
   }
@@ -99,7 +105,7 @@
     margin-top: 40px;
     margin-bottom: 60px;
 
-    @media screen and (max-width: 767px) {
+    @include screen-m {
       margin: 30px 0 50px;
       max-width: 260px;
 
@@ -117,7 +123,7 @@
     bottom: 0;
     position: relative;
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       display: none;
     }
 
@@ -144,11 +150,11 @@
     top: 50%;
     right: 4%;
 
-    @media screen and (max-width: 1199px) {
+    @include screen-xl {
       top: 55%;
     }
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       display: none;
     }
   }

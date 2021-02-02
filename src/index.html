@@ -102,19 +102,22 @@
                src="images/content/exhibition-1.png"
                alt="artifact image">
           <div class="exhibition__block">
-            <div class="exhibition__col">
+            <div class="exhibition__col exhibition__col--first">
               <div class="decoration"></div>
             </div>
-            <div class="exhibition__col">
+            <div class="exhibition__col exhibition__col--second">
               <article class="article article--exception">
                 <span class="article__note article__note--exception">
                   11.07 - 22.09
                 </span>
-                <h4 class="article__title">
+                <h4 class="article__title article__title--exception">
                   Кураторська виставка “Ангели”
                 </h4>
-                <p class="article__details">
+                <p class="article__details article__details--main">
                   Виставковий проект «Ангели» – знакова подія для української культури і водночас наймасштабніший...
+                </p>
+                <p class="article__details article__details--alternative">
+                  Виставковий проект «Ангели» – знакова подія для української культури...
                 </p>
                 <a href="#" class="button exhibition__button">Купити квиток</a>
               </article>
@@ -129,23 +132,26 @@
                 <span class="article__note article__note--red">
                   Діє постійно
                 </span>
-                <h4 class="article__title">
+                <h4 class="article__title article__title--exception">
                   Мистецтво ХХ ст. — XXI ст.
                 </h4>
-                <p class="article__details">
+                <p class="article__details article__details--main">
                   Знакові роботи Алли Горської, Миколи Самокиша, Федора Кричевського та інших митців.
+                </p>
+                <p class="article__details article__details--alternative article__details--exception">
+                  Знакові роботи А. Горської, М. Самокиша, Ф. Кричевського та інших митців.
                 </p>
                 <a href="#" class="button exhibition__button">Купити квиток</a>
               </article>
             </div>
-            <div class="exhibition__col">
+            <div class="exhibition__col exhibition__col--second">
               <div class="decoration">
                 <div class="decoration__text"></div>
               </div>
             </div>
           </div>
           <div class="exhibition__block">
-            <div class="exhibition__col">
+            <div class="exhibition__col exhibition__col--first">
               <div class="decoration">
                 <div class="decoration__text decoration__text--second"></div>
                 <img class="exhibition__img exhibition__img--third"
@@ -153,16 +159,19 @@
                      alt="Cossack Mamay image">
               </div>
             </div>
-            <div class="exhibition__col">
+            <div class="exhibition__col exhibition__col--second">
               <article class="article">
                 <span class="article__note article__note--red">
                   Діє постійно
                 </span>
-                <h4 class="article__title">
+                <h4 class="article__title article__title--exception">
                   Стародавнє мистецтво
                 </h4>
-                <p class="article__details">
+                <p class="article__details article__details--main">
                   Визначні приклади стародавнього українського іконопису та живопису
+                </p>
+                <p class="article__details article__details--alternative">
+                  Визначні приклади стародавнього українського іконопису та...
                 </p>
                 <a href="#" class="button exhibition__button">Купити квиток</a>
               </article>
@@ -286,17 +295,21 @@
         <div class="container subscribe__container">
           <h3 class="subscribe__header">Підпишіться на дайджест</h3>
           <div class="subscribe__block">
-            <p class="subscribe__info">Першими дізнавайтесь про новини музею та розіграші, отримуйте запрошення на події та читайте статті від кураторів</p>
-            <input class="subscribe__input"
-                   type="email"
-                   placeholder="e-mail"
-                   onclick="document.getElementById( 'subscribe__button' ).style.opacity = '1'"
-            >
-            <a href="#"
-               id="subscribe__button"
-               class="subscribe__button">
-              <img src="./images/svg/arrow-big.svg" alt="arrow icon button">
-            </a>
+            <p class="subscribe__info">
+              Першими дізнавайтесь про новини музею та розіграші, отримуйте запрошення на події та читайте статті від кураторів
+            </p>
+            <div class="subscribe__form">
+              <input class="subscribe__input"
+                     type="email"
+                     placeholder="e-mail"
+                     onclick="document.getElementById( 'subscribe__button' ).style.opacity = '1'"
+              >
+              <a href="#"
+                 id="subscribe__button"
+                 class="subscribe__button">
+                <img src="./images/svg/arrow-big.svg" alt="arrow icon button">
+              </a>
+            </div>
           </div>
         </div>
       </section>

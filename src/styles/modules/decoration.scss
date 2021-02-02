@@ -3,7 +3,7 @@
   width: 576px;
   height: 576px;
 
-  @media screen and (max-width: 1023px) {
+  @include screen-l {
     height: 350px;
   }
 
@@ -37,18 +37,18 @@
       z-index: -1;
       pointer-events: none;
 
-      @media screen and (max-width: 1199px) {
+      @include screen-xl {
         top: 60px;
         font-size: 122px;
         width: 480px;
       }
 
-      @media screen and (max-width: 1023px) {
+      @include screen-l {
         font-size: 72px;
         width: 300px;
       }
 
-      @media screen and (max-width: 767px) {
+      @include screen-m {
         display: none;
       }
     }

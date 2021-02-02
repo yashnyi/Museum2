@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
 
-  padding: 22px 0;
+  padding: 18px 0;
   width: 270px;
 
   color: $color-light;
@@ -39,7 +39,7 @@
 
   transition: transform 0.35s linear, color 0.5s ease;
 
-  @media screen and (max-width: 1023px) {
+  @include screen-l {
     text-align: center;
     float: none;
     padding-right: 0;
@@ -59,7 +59,7 @@
 
     background-color: $color-black;
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       left: 50%;
       transform: translateX(-50%);
       top: 30px;
@@ -71,7 +71,7 @@
     transform: translateX(-10px);
     color: $color-red-hover;
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       transform: none;
     }
 

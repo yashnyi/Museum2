@@ -4,22 +4,29 @@
   max-width: 380px;
 
   &--exception {
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       position: relative;
       left: -130px;
+    }
+
+    @include screen-m {
+      position: static;
     }
   }
 
   &--wide {
     max-width: 480px;
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       max-width: 100%;
     }
   }
 
   &--float-r {
     float: right;
+    @include screen-s {
+      float: none;
+    }
   }
 
   &__note {
@@ -33,6 +40,13 @@
       line-height: 57.6px;
       color: $color-red;
       margin-bottom: 20px;
+
+      @include screen-m {
+        position: static;
+        margin-bottom: 10px;
+        font-size: 24px;
+        line-height: 30px;
+      }
     }
 
     &--red {
@@ -52,11 +66,36 @@
     &--smallest {
       @include text-title--smallest;
     }
+
+    &--exception {
+      @include screen-s {
+        max-width: 275px;
+      }
+    }
   }
 
   &__details {
     margin-bottom: 55px;
     color: $color-gray;
+
+    &--main {
+      @include screen-s {
+        display: none;
+      }
+    }
+
+    &--alternative {
+      display: none;
+      @include screen-s {
+        display: block;
+        max-width: 130px;
+      }
+    }
+
+    &--exception {
+      position: relative;
+      right: -120px;
+    }
   }
 
   &__image {
@@ -66,11 +105,11 @@
 
     transition: transform 0.35s ease-in-out, border-radius 0.4s ease-in-out;
 
-    @media screen and (max-width: 1199px) {
+    @include screen-xl {
       height: 300px;
     }
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       height: 270px;
     }
 

@@ -8,15 +8,27 @@
   height: $height;
 }
 
-//@mixin hover($_property, $_toValue) {
-//  transition: #{$_property} 0.3s;
-//  &:hover {
-//    #{$_property}: $_toValue;
-//  }
-//}
+// Media:
+@mixin screen-s {
+  @media screen and (max-width: #{$screen-s}) {
+    @content;
+  }
+}
 
-//@mixin pseudo($display: block, $pos: absolute, $content: ''){
-//  content: $content;
-//  display: $display;
-//  position: $pos;
-//}
+@mixin screen-m {
+  @media screen and (max-width: #{$screen-m}) {
+    @content;
+  }
+}
+
+@mixin screen-l {
+  @media screen and (max-width: #{$screen-l}) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media screen and (max-width: #{$screen-xl}) {
+    @content;
+  }
+}

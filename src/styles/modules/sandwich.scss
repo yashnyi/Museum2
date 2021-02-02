@@ -8,7 +8,7 @@
 
   cursor: pointer;
 
-  @media screen and (max-width: 767px) {
+  @include screen-m {
     left: 0;
   }
 

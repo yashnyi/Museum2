@@ -2,7 +2,7 @@
   @include dark-background;
   padding: 20px 0 30px;
 
-  @media screen and (max-width: 1023px) {
+  @include screen-l {
     padding: 15px 0;
   }
 
@@ -11,11 +11,11 @@
     align-items: center;
     justify-content: space-between;
 
-    @media screen and (max-width: 1023px) {
+    @include screen-l {
       padding: 0 55px;
     }
 
-    @media screen and (max-width: 767px) {
+    @include screen-m {
       padding: 0 20px;
     }
   }

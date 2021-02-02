@@ -20,6 +20,12 @@ $sandwich-width: 25px;
 $sandwich-height: 2px;
 $sandwich-spacing: 7px;
 
+//Breakpoints:
+$screen-s: 426px;
+$screen-m: 767px;
+$screen-l: 1023px;
+$screen-xl: 1199px;
+
 //Animations:
 @keyframes jumping {
   0% {
