@@ -31,6 +31,7 @@
   display: block;
   float: right;
   text-align: right;
+  align-self: flex-end;
 
   padding-right: 100px;
   color: $color-black;
@@ -41,6 +42,7 @@
 
   @include screen-l {
     text-align: center;
+    align-self: center;
     float: none;
     padding-right: 0;
     margin-top: 50px;
