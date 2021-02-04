@@ -35,4 +35,25 @@
   &__tools {
     display: flex;
   }
+
+  &__lang {
+    @include screen-m {
+      opacity: 0;
+      order: 1;
+      margin-right: 15px;
+      transition: opacity 0.5s ease;
+    }
+
+    &.header__lang--mobile-active {
+      @include screen-m {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__sandwich {
+    @include screen-m {
+      order: 2;
+    }
+  }
 }

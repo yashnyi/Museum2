@@ -10,10 +10,6 @@
   cursor: pointer;
   z-index: 20;
 
-  @include screen-m {
-    display: none;
-  }
-
   &__lang {
     margin-right: 5px;
   }
