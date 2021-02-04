@@ -16,10 +16,10 @@
 
   &__row {
     display: flex;
-    justify-content: center;
     margin-bottom: 75px;
 
     @include screen-l {
+      justify-content: center;
       flex-wrap: wrap;
     }
 
@@ -33,7 +33,12 @@
   &__col {
     min-width: 265px;
 
+    @include screen-xl {
+      min-width: 245px;
+    }
+
     @include screen-l {
+      min-width: 265px;
       margin-bottom: 60px;
     }
 
